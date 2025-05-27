@@ -6,4 +6,5 @@ pub struct Claims {
     pub exp: usize,
     pub iat: usize,
     pub iss: String,
+    pub jti: String
 }
