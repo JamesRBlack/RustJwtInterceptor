@@ -1,0 +1,9 @@
+services:
+  jwt-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rust-jwt-frontend
+    ports:
+      - "3000:3000"  # Corrected port mapping
+    restart: unless-stopped
